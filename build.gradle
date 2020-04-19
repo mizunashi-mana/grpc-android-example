@@ -11,7 +11,7 @@ buildscript {
     ext.grpc_version = '1.28.1'
     ext.grpc_kotlin_version = '0.1.1'
 
-    ext.proto_dir = file('proto').toPath()
+    ext.proto_dir = file('proto')
 
     repositories {
         google()
@@ -29,7 +29,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        mavenLocal()
     }
 }
 
