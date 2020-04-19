@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.example.myapplication.proto;
+
+service Service {
+    rpc Connect (stream Post) returns (stream Post) {}
+}
+
+message Post {
+    string message = 1;
+}
